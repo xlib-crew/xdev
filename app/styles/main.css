@@ -547,3 +547,9 @@ body {
     line-height: 22px;
     color: #ccc9c3
 }
+.fagContainer{
+    margin-top: 20px;
+    float:left;
+    margin-left: -360px;
+    width: 160px;
+}

@@ -1,6 +1,7 @@
+
 <div class="navbar navbar-default navbar-fixed-top" style="margin-top: 40px; background-color: #d9edf7" ng-controller="NavCtrl">
     <div class="container" style="margin-left: 50px">
-        <div class="navbar-collapse collapse" id="navbar-main" style="margin-left:27%">
+        <div class="navbar-collapse collapse" id="navbar-main" style="margin-left:15%">
             <ul class="nav navbar-nav" ng-show="showNav()">
                 <li><a href="/#/home">Naturfag</a></li>
                 <li><a href="/#/fag">Matematikk R1</a></li>
@@ -11,3 +12,11 @@
         </div>
     </div>
 </div>
+<div class="fagContainer">
+<div class="panel panel-default">
+    <div class="panel-heading">Dagens opplegg</div>
+    <div class="panel-body" ng-repeat="items in todayItems">
+        {{items}}
+    </div>
+</div>
+ </div>

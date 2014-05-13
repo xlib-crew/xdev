@@ -2,9 +2,10 @@
 
 angular.module('xdevApp')
   .controller('FagCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    $scope.todayItems = {
+        1: 'Matte: 08:15',
+        2: 'Norsk: 10:15',
+        3: 'Naturfag: 13:15',
+        4: 'Kjemi: 14:15'
+    }
   });
