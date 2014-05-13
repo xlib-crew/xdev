@@ -10,7 +10,6 @@
     "./dist/fonts/glyphicons-halflings-regular.woff"
   ],
   "ignore": [
-    "**/.*",
     "_*",
     "docs-assets",
     "examples",
