@@ -77,3 +77,473 @@ body {
     border-bottom: 0;
   }
 }
+.nav .nav-space-left {
+    margin-left: 20px
+}
+
+.nav .nav-space-right {
+    margin-right: 20px
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0
+}
+
+.nav ul li {
+    margin: 0
+}
+
+.nav ul li a {
+    text-decoration: none
+}
+
+.nav-top {
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    opacity: .95;
+    background: #FFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    height: 76px
+}
+
+.nav-top nav {
+    width: 960px;
+    margin: 0 auto
+}
+
+.nav-top nav .button-mobile-menu {
+    display: none
+}
+
+.nav-top nav h1 {
+    float: left;
+    margin: 18px 0;
+    font-size: 28px
+}
+
+.nav-top nav h1 a {
+    display: block;
+    text-decoration: none;
+    color: #322f31;
+    line-height: 40px;
+    height: 40px;
+    width: 180px;
+    text-indent: -3000px;
+    overflow: hidden
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:2), only screen and (min-device-pixel-ratio:2) {
+    .nav-top nav h1 a {
+        background-image: url(/resources/images/website/sprites/website-sprite@2x.png);
+        -webkit-background-size: 500px 2000px;
+        background-size: 500px 2000px
+    }
+}
+
+.nav-top nav ul {
+    float: right
+}
+
+.nav-top nav ul li {
+    float: right;
+    margin: 20px 0 0 10px
+}
+
+.nav-top nav ul li a {
+    font-family: proxima-nova, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 36px;
+    height: 36px;
+    padding: 0 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #7b8386
+}
+
+.nav-top nav ul li a.button-flat-plain {
+    border-radius: 0
+}
+
+.nav-top nav ul li a.button-flat-plain.selected {
+    color: #322f31;
+    border-bottom: 2px solid #50b1ff
+}
+
+.nav-top nav ul li a.button-flat-plain:hover {
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    color: #50b1ff
+}
+
+.nav-top nav ul li a.button-flat-plain:active {
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.nav-top nav ul li a.button-signup {
+    line-height: 36px;
+    height: 36px;
+    position: relative;
+    padding: 0 20px 0 28px;
+    color: #FFF
+}
+
+.nav-top nav ul li a.button-signup:hover {
+    background: #322f31;
+    color: #FFF
+}
+
+.nav-top nav ul li a.button-signup:hover .icon-lightning {
+    color: #fec324
+}
+
+.nav-top nav ul li a.button-signup:active {
+    -webkit-transition-duration: 0;
+    transition-duration: 0
+}
+
+.nav-top nav ul li a.button-signup .icon-lightning {
+    display: inline-block;
+    position: absolute;
+    top: 9px;
+    left: 7px;
+    z-index: 1;
+    font-size: 16px;
+    color: #ffe36a
+}
+
+.nav-top nav ul li a.button-login {
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    border-radius: 3px;
+    border: 1px solid #7b8386;
+    line-height: 34px;
+    height: 34px;
+    color: #7b8386;
+    padding: 0 20px
+}
+
+.nav-top nav ul li a.button-login:hover {
+    border: 1px solid #50b1ff;
+    color: #50b1ff
+}
+
+@media handheld and (max-width:480px), screen and (max-device-width:480px), screen and (max-width:900px) {
+    .nav-top .nav-space-left {
+        margin-left: 0
+    }
+
+    .nav-top .nav-space-right {
+        margin-right: 0
+    }
+
+    .nav-top nav {
+        width: auto
+    }
+
+    .nav-top nav h1 {
+        margin-left: 18px
+    }
+
+    .nav-top nav .button-mobile-menu {
+        border-radius: 3px;
+        border: 1px solid #ccc9c3;
+        padding: 0 10px;
+        line-height: 38px;
+        height: 38px;
+        display: block;
+        text-decoration: none;
+        color: #7b8386;
+        position: absolute;
+        top: 18px;
+        right: 18px;
+        z-index: 1
+    }
+
+    .nav-top nav .button-mobile-menu i {
+        line-height: 38px;
+        font-size: 28px
+    }
+
+    .nav-top nav ul {
+        display: none;
+        background: #FFF;
+        position: fixed;
+        top: 76px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        overflow: auto;
+        float: none;
+        padding: 18px
+    }
+
+    .nav-top nav ul.show {
+        display: block
+    }
+
+    .nav-top nav ul li {
+        float: none;
+        margin: 0 0 10px
+    }
+
+    .nav-top nav ul li a {
+        display: block;
+        margin: 0
+    }
+
+    .nav-top nav ul li a.button-flat-plain {
+        background: #f7f7f7
+    }
+}
+
+.nav-sidenav.affix {
+    position: fixed;
+    top: 80px;
+    right: 50%;
+    z-index: 1;
+    margin-right: -470px
+}
+
+@media handheld and (max-width:480px), screen and (max-device-width:480px), screen and (max-width:900px) {
+    .nav-sidenav.affix {
+        display: none
+    }
+}
+
+.nav-sidenav ul li {
+    border-bottom: 1px solid #f7f7f7;
+    text-transform: uppercase
+}
+
+.nav-sidenav ul li:last-child {
+    border-bottom: 0
+}
+
+.nav-sidenav ul li a {
+    padding: 0 20px;
+    line-height: 49px;
+    color: #7b8386;
+    display: block;
+    font-size: 12px
+}
+
+.nav-sidenav ul li a:hover {
+    color: #50b1ff
+}
+
+.nav-sidenav ul li a.selected {
+    font-family: proxima-nova, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #322f31;
+    font-size: 14px
+}
+
+@media handheld and (max-width:480px), screen and (max-device-width:480px), screen and (max-width:900px) {
+    .nav-sidenav {
+        display: none
+    }
+}
+
+.nav-launchpad {
+    overflow: hidden;
+    background: #322f31;
+    padding: 60px 0 0;
+    color: #FFF
+}
+
+.nav-launchpad h5 {
+    margin-bottom: 0;
+    line-height: 28px
+}
+
+.nav-launchpad ul li {
+    font-size: 14px;
+    line-height: 28px
+}
+
+.nav-launchpad ul li a {
+    color: #FFF
+}
+
+.nav-launchpad ul li a:hover {
+    text-decoration: underline
+}
+
+.nav-launchpad .copyright {
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .1) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .1) inset;
+    border-top: 1px solid #222;
+    margin-top: 60px;
+    padding: 20px 0;
+    color: #ccc9c3
+}
+
+.nav-launchpad .copyright small {
+    float: left;
+    padding-left: 100px;
+    position: relative;
+    line-height: 28px;
+    font-size: 11px
+}
+
+.nav-launchpad .copyright small h5 {
+    display: inline-block;
+    font-size: 14px;
+    width: 90px;
+    height: 18px;
+    color: #322f31;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    z-index: 1
+}
+
+.nav-launchpad .copyright small h5 a {
+    background: url(/resources/images/website/sprites/website-sprite.png) -200px 0 no-repeat;
+    display: block;
+    width: 90px;
+    height: 18px;
+    text-indent: -3000px;
+    overflow: hidden;
+    text-decoration: none
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:2), only screen and (min-device-pixel-ratio:2) {
+    .nav-launchpad .copyright small h5 a {
+        background-image: url(/resources/images/website/sprites/website-sprite@2x.png);
+        -webkit-background-size: 500px 2000px;
+        background-size: 500px 2000px
+    }
+}
+
+.nav-launchpad .copyright ul {
+    float: right
+}
+
+.nav-launchpad .copyright ul li {
+    float: right;
+    margin: 0 0 0 10px;
+    font-size: 11px
+}
+
+.nav-launchpad .copyright ul li a {
+    color: #ccc9c3
+}
+
+@media handheld and (max-width:480px), screen and (max-device-width:480px), screen and (max-width:900px) {
+    .nav-launchpad {
+        padding-top: 40px
+    }
+
+    .nav-launchpad h5 {
+        display: none
+    }
+
+    .nav-launchpad ul:first-of-type li a {
+        border-radius: 3px;
+        display: block;
+        padding: 0 20px;
+        background: #4c484b;
+        line-height: 40px;
+        margin-bottom: 10px
+    }
+
+    .nav-launchpad .copyright {
+        text-align: center;
+        margin-top: 20px
+    }
+
+    .nav-launchpad .copyright small, .nav-launchpad .copyright ul {
+        float: none
+    }
+
+    .nav-launchpad .copyright small {
+        padding: 0
+    }
+
+    .nav-launchpad .copyright small h5 {
+        position: static;
+        margin: 0 auto;
+        display: block
+    }
+
+    .nav-launchpad .copyright ul li {
+        float: none;
+        margin: 0;
+        display: block
+    }
+
+    .nav-launchpad .copyright ul li a {
+        font-size: 14px
+    }
+}
+
+.nav-footer {
+    text-align: center;
+    margin: 60px 0
+}
+
+.nav-footer h5 {
+    font-size: 14px;
+    width: 87px;
+    height: 15px;
+    color: #322f31;
+    text-align: left;
+    margin: 0 auto 5px
+}
+
+.nav-footer h5 a {
+    display: block;
+    background: url(/resources/images/website/sprites/website-sprite.png) -300px 0 no-repeat;
+    text-indent: -3000px;
+    overflow: hidden;
+    text-decoration: none;
+    width: 87px;
+    height: 15px
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:2), only screen and (min-device-pixel-ratio:2) {
+    .nav-footer h5 a {
+        background-image: url(/resources/images/website/sprites/website-sprite@2x.png);
+        -webkit-background-size: 500px 2000px;
+        background-size: 500px 2000px
+    }
+}
+
+.nav-footer ul {
+    text-align: center
+}
+
+.nav-footer ul li {
+    display: inline;
+    margin: 0 5px;
+    font-size: 13px;
+    line-height: 22px
+}
+
+.nav-footer ul li a {
+    color: #ccc9c3;
+    text-decoration: underline
+}
+
+.nav-footer small {
+    display: block;
+    margin: 0;
+    font-size: 13px;
+    line-height: 22px;
+    color: #ccc9c3
+}
