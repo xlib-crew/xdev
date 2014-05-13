@@ -1,11 +1,25 @@
 <div class="jumbotron">
 <h2>Velkommen til Xlib</h2>
     <h4>Innlogging</h4>
- <div class="form-group">
-   <input class="form-control" id="Brukernavn" type="text" placeholder="Brukernavn">
+
+   <div class="form-group">
+      <label for="select" class="col-lg-2 control-label">Selects</label>
+      <div class="col-lg-10">
+        <select class="form-control" id="select">
+          <option>BHG</option>
+          <option>Sandsli VGS</option>
+          <option>Fana Gymnas</option>
+          <option>Nordaahl Grieg</option>
+          <option>Gløshaugen</option>
+        </select>
+    </div>
+</div>
+
+ <div class="form-group" style="margin-top: 10%">
+   <input class="form-control" ng-model="user.name" type="text" placeholder="Brukernavn">
  </div>
  <div class="form-group">
-   <input class="form-control" id="Passord" type="password" placeholder="Passord">
+   <input class="form-control" ng-model="user.password" type="password" placeholder="Passord">
  </div>
 </div>
 
