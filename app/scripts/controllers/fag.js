@@ -8,4 +8,7 @@ angular.module('xdevApp')
         3: 'Naturfag: 13:15',
         4: 'Kjemi: 14:15'
     }
+    $scope.monday = {
+  
+    }
   });
