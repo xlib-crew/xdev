@@ -4,7 +4,8 @@ angular.module('xdevApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ngRoute'
+  'ngRoute',
+  'ngStorage'
 ])
   .config(function ($routeProvider) {
     $routeProvider
