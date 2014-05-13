@@ -148,9 +148,8 @@ body {
 }
 
 .nav-top nav ul {
-    float: right
+    float: right;
 }
-
 .nav-top nav ul li {
     float: right;
     margin: 20px 0 0 10px
