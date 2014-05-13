@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('xdevApp')
-  .controller('FagCtrl', function ($scope) {
+  .controller('FagCtrl', function ($scope, templogin) {
     $scope.todayItems = {
         1: 'Matte: 08:15',
         2: 'Norsk: 10:15',
@@ -9,6 +9,7 @@ angular.module('xdevApp')
         4: 'Kjemi: 14:15'
     }
     $scope.monday = {
-  
+
     }
+    templogin.login();
   });
